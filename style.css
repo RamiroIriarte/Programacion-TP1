@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: #d0e7ff;  /* Color de fondo suave */
+  color: #333;               /* Color de texto oscuro y legible */
+  margin: 0;
+  padding: 20px;
+}
+
+.centrado {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical */
+  align-items: center;     /* Horizontal */
+  gap: 20px; /* Espacio entre el input y el botón */
+}
+
+/* Cuadro de texto */
+.cuadro-texto {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Botón */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004a99;
+}
+
+a.enlace {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;        /* Elimina el subrayado */
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;    /* Azul principal */
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+   margin-bottom: 20px; 
+}
+
+a.enlace:hover {
+  background-color: #0056b3;    /* Azul más oscuro al pasar el mouse */
+  transform: scale(1.05);       /* Ligero aumento en tamaño */
+}
+
+strong.destacado {
+  display: inline-block;
+  color: black;         /* Mismo azul del enlace */
+  font-weight: bold;
+  background-color: #e6f0ff; /* Fondo azul claro */
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #0083b0;
+  transition: width 0.3s ease;
+}
+
+h1:hover::after {
+  width: 100%;
+}
